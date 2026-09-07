@@ -1,23 +1,20 @@
-# Bot WhatsApp Riki
 
-Bot WhatsApp sederhana pake Baileys
+cd ~ && rm -rf bot-wa-riki && mkdir bot-wa-riki && cd bot-wa-riki && echo '{ "name": "bot-wa-riki", "version": "1.0.0", "description": "Bot WA by Byxriki", "main": "index.js", "scripts": { "start": "node index.js" }' > package.json && echo 'node_modules/
+session/
+*.log
+.env' > .gitignore && echo '#!/bin/bash
+clear
+echo "INSTALL BOT WA RIKI BYXRIKI"
+pkg update && pkg upgrade -y
+pkg install git nodejs ffmpeg imagemagick -y
+npm install
+echo "SELESAI! Jalankan: npm start"' > install.sh && chmod +x install.sh && echo '# BOT-WA-RIKI 🤖
+Bot WhatsApp by **Byxriki**
 
-## Fitur
-- .menu - Liat menu
-- .ping - Cek bot online
-- .cek - Fitur tambahan
+### 📥 CARA INSTALL 1 KLIK
+`pkg update && pkg upgrade -y && pkg install git nodejs ffmpeg imagemagick -y && git clone https://github.com/byxriki51-pixel/bot-wa-riki && cd bot-wa-riki && bash install.sh && npm start`
 
-## Cara Install
-1. Clone repo ini
-   git clone https://github.com/username-kamu/bot-wa-riki.git
-2. Masuk folder
-   cd bot-wa-riki
-3. Install library
-   npm install
-4. Jalanin bot
-   node index.js
-5. Scan QR pake WhatsApp
+Terus scan QR
 
-## Dibuat dengan
-- Node.js
-- @whiskeysockets/baileys
+### 👨‍💻 AUTHOR
+Byxriki - https://github.com/byxriki51-pixel' > README.md && git init && git add . && git commit -m "Rilis v1.0 Lengkap" && git branch -M main && git remote add origin https://github.com/byxriki51-pixel/bot-wa-riki.git && git push -u origin main
